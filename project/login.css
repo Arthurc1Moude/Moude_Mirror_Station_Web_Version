@@ -1,0 +1,107 @@
+﻿/* login.css */
+
+/* 全局样式 */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 登录容器外部包裹层，居中对齐 */
+.login-wrapper {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* 登录容器 */
+.login-container {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 350px;
+    text-align: center;
+}
+
+/* 标题部分 */
+.login-header h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.login-header p {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* 表单样式 */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.9em;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.9em;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        outline: none;
+        box-sizing: border-box;
+    }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+/* 登录按钮 */
+.form-footer {
+    margin-top: 20px;
+}
+
+    .form-footer button {
+        width: 100%;
+        padding: 10px;
+        font-size: 1em;
+        font-weight: bold;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        background: linear-gradient(to right, #ff7eb3, #ff758c, #ff9a8b);
+        transition: background 0.3s ease;
+    }
+
+        .form-footer button:hover {
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+        }
+
+/* 页脚样式 */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0.7;
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+}

@@ -1,0 +1,154 @@
+﻿/* Global Reset */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    color: #fff;
+    overflow-x: hidden;
+}
+
+header {
+    text-align: center;
+    padding: 30px 0;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px);
+    position: relative;
+}
+
+/* ============================== */
+/* 🎨 Complex Pure CSS Mirror Icon */
+/* ============================== */
+.mirror-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    background: linear-gradient(to bottom, #6dd5ed, #2193b0);
+    border-radius: 50%;
+    box-shadow: inset -8px -8px 15px rgba(255, 255, 255, 0.6), inset 8px 8px 15px rgba(0, 0, 0, 0.2), 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    /* Inner Glow Effect */
+    .mirror-icon::before {
+        content: "";
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        width: 70%;
+        height: 70%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.5), transparent);
+        border-radius: 50%;
+        filter: blur(8px);
+        z-index: 1;
+    }
+
+    /* Central Reflected Light */
+    .mirror-icon::after {
+        content: "";
+        position: absolute;
+        bottom: 10%;
+        right: 10%;
+        width: 50%;
+        height: 50%;
+        background: linear-gradient(to top, rgba(255, 255, 255, 0.4), transparent);
+        border-radius: 50%;
+        filter: blur(4px);
+        z-index: 1;
+    }
+
+    /* Geometric Inner Design */
+    .mirror-icon .inner-shape {
+        width: 60%;
+        height: 60%;
+        background: linear-gradient(to top right, #ffffff, #dfe9f3);
+        border-radius: 50%;
+        box-shadow: inset -4px -4px 8px rgba(0, 0, 0, 0.2), inset 4px 4px 8px rgba(255, 255, 255, 0.4);
+        z-index: 2;
+    }
+
+/* Mirror Repository Title */
+header h1 {
+    font-size: 2.2em;
+    margin: 10px 0;
+}
+
+header p {
+    font-size: 1em;
+    opacity: 0.8;
+}
+
+/* ============================== */
+/* 📊 Loader Animation */
+/* ============================== */
+.loader {
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    border-top: 6px solid #fff;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 50px auto;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* ============================== */
+/* 📑 File List */
+/* ============================== */
+.file-list {
+    list-style: none;
+    padding: 0;
+    margin: 30px auto;
+    max-width: 600px;
+}
+
+    .file-list li {
+        background: linear-gradient(to bottom, #ffffff, #e6e6e6);
+        margin: 15px 0;
+        padding: 15px 20px;
+        border-radius: 10px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        color: #333;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+        .file-list li::before {
+            content: "";
+            width: 30px;
+            height: 30px;
+            background: linear-gradient(to bottom, #3498db, #2980b9);
+            border-radius: 5px;
+            box-shadow: inset -2px -2px 5px rgba(255, 255, 255, 0.6), inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .file-list li:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+        }
+
+/* ============================== */
+/* 📎 Footer */
+/* ============================== */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-top: 30px;
+}

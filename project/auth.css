@@ -1,0 +1,150 @@
+﻿/* auth.css */
+
+/* 全局样式 */
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(to bottom right, #1e3c72, #2a5298);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* 容器样式 */
+.auth-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+}
+
+.auth-container {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 30px 40px;
+    width: 350px;
+    text-align: center;
+}
+
+/* 标题 */
+.auth-header h1 {
+    font-size: 1.8em;
+    margin-bottom: 5px;
+}
+
+.auth-header p {
+    font-size: 0.9em;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+/* 输入框样式 */
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 8px;
+        font-size: 0.9em;
+    }
+
+    .form-group input {
+        width: calc(100% - 20px); /* 让输入框宽度适配按钮 */
+        padding: 10px;
+        font-size: 0.9em;
+        border: none;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.2);
+        color: #fff;
+        outline: none;
+    }
+
+/* 登录按钮样式 */
+.login-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #e6a3d9, #9b7bcd); /* 粉紫渐变 */
+    transition: background 0.3s ease;
+}
+
+    .login-btn:hover {
+        background: linear-gradient(to right, #9b7bcd, #e6a3d9); /* 反转粉紫渐变 */
+    }
+
+/* 注册按钮样式 */
+.register-btn {
+    width: 100%;
+    padding: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background: linear-gradient(to right, #0072ff, #00c6ff); /* 浅蓝渐变 */
+    transition: background 0.3s ease;
+}
+
+    .register-btn:hover {
+        background: linear-gradient(to right, #00c6ff, #0072ff); /* 反转浅蓝渐变 */
+    }
+
+/* 链接样式 */
+.auth-link {
+    margin-top: 15px;
+}
+
+    .auth-link a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 0.9em;
+        transition: color 0.3s ease;
+        display: inline-block;
+        padding: 10px;
+        cursor: pointer;
+    }
+
+        .auth-link a:hover {
+            color: #87cefa; /* 浅蓝色 */
+        }
+
+/* 无背景文字按钮（切换按钮）样式 */
+.switch-btn {
+    background: none;
+    color: #fff;
+    font-size: 0.7em;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+    .switch-btn:hover {
+        color: #87cefa; /* 浅蓝色 */
+    }
+
+/* 页脚 */
+footer {
+    text-align: center;
+    font-size: 0.8em;
+    opacity: 0.7;
+    margin-top: 20px;
+    padding: 10px 0;
+    width: 100%;
+}
